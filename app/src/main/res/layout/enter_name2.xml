@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#272727">
+
+    <TextView
+        android:id="@+id/playerToEnter2"
+        android:layout_width="317dp"
+        android:layout_height="39dp"
+        android:text="Enter name of player 2:"
+        android:textColor="#F3F3F3"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/submit2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="317dp"
+        android:layout_height="39dp"
+        android:gravity="center"
+        android:text="(1-8 characters allowed)"
+        android:textColor="#F3F3F3"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/enterName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerToEnter2" />
+
+    <EditText
+        android:id="@+id/enterName2"
+        android:layout_width="295dp"
+        android:layout_height="47dp"
+        android:background="@drawable/textview_border"
+        android:maxLength="8"
+        android:singleLine="true"
+        android:textColor="#F3F3F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+
+
+    <Button
+        android:id="@+id/submit2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/textview_border"
+        android:text="Submit"
+        android:textColor="#4DB0FF"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/enterName2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

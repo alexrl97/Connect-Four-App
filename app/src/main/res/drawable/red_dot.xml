@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- https://stackoverflow.com/questions/3088111/android-shape-within-a-shape -->
+    <item
+        android:left="6dp"
+        android:right="6dp">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <stroke
+                android:width="3dp"
+                android:color="#1535E8" />
+        </shape>
+    </item>
+    <item
+        android:bottom="1dp"
+        android:left="8dp"
+        android:right="8dp"
+        android:top="1dp">
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+
+            <solid
+                android:color="#FF3333"/>
+
+            <size
+                android:width="90dp"
+                android:height="90dp"/>
+        </shape>
+    </item>
+</layer-list>

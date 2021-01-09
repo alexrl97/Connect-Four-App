@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/client_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#272727"
+    android:orientation="vertical"
+    tools:context="app.connectfour.network.Client_Fragment">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:background="#272727"
+        android:gravity="center"
+        android:text="BLUETOOTH"
+        android:textColor="#1D3BFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/device"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Button
+        android:id="@+id/device"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/textview_border"
+        android:gravity="center"
+        android:text="Device: "
+        android:textColor="#4DB0FF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/join"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+    <Button
+        android:id="@+id/join"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="44dp"
+        android:gravity="center"
+        android:text="JOIN GAME"
+        android:textColor="#1D3BFF"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/ready"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+    <Button
+        android:id="@+id/ready"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/textview_border"
+        android:gravity="center"
+        android:text="READY TO PLAY!"
+        android:textColor="#272727"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/playerNameView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/playerNameView"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="156dp"
+        android:background="@drawable/textview_border"
+        android:gravity="center"
+        android:text="Name = Player"
+        android:textColor="#F3F3F3"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/ct_output"
+        android:layout_width="345dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="56dp"
+
+        android:textColor="#F3F3F3"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerNameView"
+        app:layout_constraintVertical_bias="1.0"></TextView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
